@@ -1108,7 +1108,7 @@ body {
   
   .events::before {
     content: '';
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgb(255, 255, 255);
     position: absolute;
     top: 0;
     right: 0;
@@ -1150,6 +1150,7 @@ body {
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
     margin-bottom: 15px;
+    color: #000000;
   }
   
   .events .event-item .price span {
@@ -1173,6 +1174,7 @@ body {
   
   .events .event-item p:last-child {
     margin-bottom: 0;
+    color: #000000;
   }
   
   .events .swiper-pagination {
