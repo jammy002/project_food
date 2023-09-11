@@ -212,14 +212,47 @@ body {
   }
   
   #header .logo img {
-    max-height: 40px;
-    max-height: 71px;
+    max-height: 100px;
     height: 201px;
     position: absolute;
     top: 0px;
     left: 92px;
   }
-  
+  /* Media query for small screens (example: screens up to 576px wide) */
+@media screen and (max-width: 576px) {
+  #header .logo img {
+    max-height: 80px; /* Adjust for smaller screens */
+    top: -10px; /* Adjust for smaller screens */
+    left: 10px; /* Adjust for smaller screens */
+  }
+}
+
+/* Media query for medium screens (example: screens between 577px and 992px wide) */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  #header .logo img {
+    max-height: 80px; /* Adjust for medium screens */
+    top: -10px; /* Adjust for medium screens */
+    left: 20px; /* Adjust for medium screens */
+  }
+}
+
+/* Media query for large screens (example: screens between 993px and 1200px wide) */
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  #header .logo img {
+    max-height: 120px; /* Adjust for large screens */
+    top: -5px; /* Adjust for large screens */
+    left: 30px; /* Adjust for large screens */
+  }
+}
+
+/* Media query for extra-large screens (example: screens wider than 1200px) */
+@media screen and (min-width: 1201px) {
+  #header .logo img {
+    height: 201px; /* Your original styles for extra-large screens */
+    left: 100px; /* Your original styles for extra-large screens */
+  }
+}
+
   /*--------------------------------------------------------------
   # Book a table button Menu
   --------------------------------------------------------------*/
@@ -664,7 +697,7 @@ body {
   }
   
   .section-bg {
-    background-color: #1a1814;
+    background-color: #ffffff;
   }
   
   .section-title {
@@ -923,7 +956,7 @@ body {
     font-size: 16px;
     font-weight: 500;
     line-height: 1;
-    color: #fff;
+    color: #000000;
     margin-bottom: 10px;
     transition: all ease-in-out 0.3s;
     border-radius: 50px;
@@ -972,11 +1005,11 @@ body {
   
   .menu .menu-content a {
     padding-right: 10px;
-    background: #1a1814;
+    background: #ffffff;
     position: relative;
     z-index: 3;
     font-weight: 700;
-    color: white;
+    color: rgb(0, 0, 0);
     transition: 0.3s;
   }
   
@@ -985,7 +1018,7 @@ body {
   }
   
   .menu .menu-content span {
-    background: #1a1814;
+    background: #ffffff;
     position: relative;
     z-index: 3;
     padding: 0 10px;
@@ -998,7 +1031,7 @@ body {
     font-style: italic;
     font-size: 14px;
     font-family: "Poppins", sans-serif;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(0, 0, 0, 0.5);
   }
   
   /*--------------------------------------------------------------
