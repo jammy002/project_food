@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testing</title>
+  <style>
+    /* @property --rotate {
+    syntax: "<angle>";
+    initial-value: 132deg;
+    inherits: false;
+  } */
+
+  :root {
+    --card-height: 24vh;
+    --card-width: calc(var(--card-height) / 0.5);
+  }
+
+  body {
+    min-height: 100vh;
+    background: #212534;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    box-sizing: border-box;
+  }
+
+  .card-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: calc(var(--card-width) * 5 + -255px); /* Adjust the width as needed */
+    margin: 0 auto;
+  }
+
+  .card {
+    background: #191c29;
+    width: 240px;
+    height: 150px;
+    padding: 3px;
+    position: relative;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    font-size: 1.5em;
+    color: rgb(88 199 250 / 100%);
+    /* Show text initially */
+    cursor: pointer;
+    font-family: cursive;
+    transition: color 1s;
+    margin: 10px;
+  }
+
+  
+  .card:hover {
+    color: rgb(88 199 250 / 100%); /* Change the text color on hover to make it visible */
+  }
+
+  .card:hover:before,
+  .card:hover:after {
+    animation: none;
+    opacity: 0;
+  }
+/* 
+  .card::before {
+    content: "";
+    width: 104%;
+    height: 102%;
+    border-radius: 8px;
+    background-image: linear-gradient(var(--rotate), #5ddcff, #e33c3c 43%, #4e00c2);
+    position: absolute;
+    z-index: -1;
+    top: -1%;
+    left: -2%;
+    animation: spin 1.5s linear infinite;
+  } */
+
+  .card::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    transform: scale(0.8);
+    filter: blur(calc(var(--card-height) / 6));
+    background-image: linear-gradient(var(--rotate), #5ddcff, #3c67e3 43%, #4e00c2);
+    opacity: 1;
+    transition: opacity .5s;
+    animation: spin 2.5s linear infinite;
+  }
+
+  .card img {
+    max-width: 100%;
+    /* Limits the image width */
+    max-height: 100%;
+    /* Limits the image height */
+    opacity: 1;
+    /* Initially hide the image with 0 opacity */
+    transition: opacity 0.5s;
+    /* Add a transition for opacity */
+    
+  }
+
+  .card:hover img {
+    opacity: 1;
+    /* Show the image on hover with a smooth transition */
+    
+  }
+
+  @keyframes spin {
+    0% {
+      --rotate: 0deg;
+    }
+
+    100% {
+      --rotate: 360deg;
+    }
+  }
+
+  a {
+    color: #212534;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-top: 2rem;
+  }
+  @media (min-width: 577px) and (max-width: 768px) {
+    
+    /* sm: Small devices (tablets) */
+    /* Adjust styles as needed */
+  }
+
+  @media (min-width: 769px) and (max-width: 992px) {
+    /* md: Medium devices (desktops) */
+    /* Adjust styles as needed */
+  }
+  </style>
+</head>
+<body>
+  <!-- ======= Our Sub-Brands ======= -->
+  <section id="why-us" class="why-us">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h2>All About Food</h2>
+        <p>Our Sub-Brands</p>
+      </div>
+
+      <div class="row">
+
+        <div class="card-container">
+          <!-- Card 1 -->
+          <div class="card">
+            <a href="https://webbears.online/"><img src="assets/Images/Lazzate Laham-png.png" alt="Image"></a>
+          </div>
+      
+          <!-- Card 2 -->
+          <div class="card">
+            <a href="https://webbears.online/"><img src="assets/Images/Veg Mahal-png.png" alt="Image"></a>
+          </div>
+      
+          <!-- Card 3 -->
+          <div class="card">
+            <a href="https://webbears.online/"><img src="assets/Images/Kuch Meetha Ho Jaye-png.png" alt="Image"></a>
+          </div>
+      
+          <!-- Card 4 -->
+          <div class="card">
+           <a href="https://webbears.online/"> <img src="assets/Images/Coffee Bliss-png.png" alt="Image"></a>
+          </div>
+      
+          <!-- Card 5 -->
+          <div class="card"> </a>
+            <a href="https://webbears.online/"><img src="assets/Images/Dombivli Chaat Centre-png.png" alt="Image"></a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Sub Brands Section -->
+</body>
+</html>
