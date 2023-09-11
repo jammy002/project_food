@@ -1255,9 +1255,9 @@ body {
     border-radius: 0;
     box-shadow: none;
     font-size: 14px;
-    background: #0c0b09;
-    border-color: #625b4b;
-    color: white;
+    background: #dcd3c1b3;
+    border-color: #000000;
+    color: rgb(0, 0, 0);
   }
   
   .book-a-table .php-email-form input::-webkit-input-placeholder, .book-a-table .php-email-form textarea::-webkit-input-placeholder {
@@ -1349,7 +1349,7 @@ body {
     font-style: italic;
     margin: 0 15px 0 15px;
     padding: 20px 20px 60px 20px;
-    background: #26231d;
+    background: #dcd3c1b3;
     position: relative;
     border-radius: 6px;
     position: relative;
@@ -1506,7 +1506,7 @@ body {
     padding: 0 0 0 60px;
     margin-bottom: 0;
     font-size: 14px;
-    color: #bab3a6;
+    color: #000000;
   }
   
   .contact .info .open-hours, .contact .info .email, .contact .info .phone {
@@ -1570,9 +1570,9 @@ body {
     border-radius: 0;
     box-shadow: none;
     font-size: 14px;
-    background: #0c0b09;
-    border-color: #625b4b;
-    color: white;
+    background: #dcd3c1b3;
+    border-color: #000000;
+    color: rgb(0, 0, 0);
   }
   
   .contact .php-email-form input::-webkit-input-placeholder, .contact .php-email-form textarea::-webkit-input-placeholder {
